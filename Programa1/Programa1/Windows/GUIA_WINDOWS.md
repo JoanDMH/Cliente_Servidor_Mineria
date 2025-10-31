@@ -19,7 +19,9 @@ gcc --version
 
 Programa1/Windows/
 ├── Archivo.txt           # Texto base (ya existe)
+
 ├── utilidades_hash.h     # Header de funciones
+
 ├── utilidades_hash.c     # Implementación hash
 ├── servidor.c            # Servidor Windows
 ├── worker.c              # Worker Windows
