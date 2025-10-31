@@ -15,7 +15,7 @@ Abrir PowerShell nueva y ejecutar:
 gcc --version
 
 
-## 📁 Archivos del Proyecto
+##  Archivos del Proyecto
 
 Programa1/Windows/
 ├── Archivo.txt           # Texto base (ya existe)
