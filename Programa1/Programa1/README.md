@@ -37,28 +37,7 @@ El sistema consta de:
     └─────────────────┘         └─────────────────┘
 ```
 
-## Algoritmo de Hash Simple
 
-# Diseño
-
-El hash NO utiliza SHA-256 ni MD5. Implementa un algoritmo propio basado en:
-
-```c
-hash = 0
-Para cada carácter c en posición i:
-    ascii = valor_ASCII(c)
-    hash = (hash * PRIMO2 + ascii * (i+1)) % PRIMO1
-    hash = (hash + ascii²) % PRIMO3
-
-hash_final = (hash * PRIMO2 + longitud_texto) % PRIMO1
-resultado_hex = convertir_a_hexadecimal(hash_final)
-```
-
-# Números Primos Utilizados
-
-- PRIMO1: 1,000,000,007
-- PRIMO2: 1,000,000,009
-- PRIMO3: 999,999,937
 
 
 ## Archivos del Proyecto
