@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <math.h>
 
-// Números primos para las operaciones de hash
 #define PRIMO1 1000000007ULL
 #define PRIMO2 1000000009ULL
 #define PRIMO3 999999937ULL
