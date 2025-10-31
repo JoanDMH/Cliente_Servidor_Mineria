@@ -1,29 +1,10 @@
-# Documentación Técnica - Simulador de Blockchain
+## Joan David Martinez Hernandez- 160004716
+# Documentación Técnica - Simulador de Blockchain -Cliente-Servidor
 
 ## Arquitectura del Sistema
 
-### Componentes Principales
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                       SERVIDOR                          │
-│  - Coordina workers                                     │
-│  - Divide espacio de búsqueda                           │
-│  - Recibe resultados                                    │
-│  - Notifica detención                                   │
-└───────────┬─────────────────────────────┬───────────────┘
-            │                             │
-            │      Socket TCP/IP          │
-            │      Puerto 8888            │
-            │                             │
-    ┌───────▼─────────┐         ┌────────▼────────┐
-    │    WORKER 1     │   ...   │    WORKER N     │
-    │  Rango: [0-X]   │         │  Rango: [Y-Z]   │
-    │  Busca hash     │         │  Busca hash     │
-    └─────────────────┘         └─────────────────┘
-```
-
-## Algoritmo de Hash Simple
+### Algoritmo de Hash Simple
 
 ### Diseño
 
@@ -235,9 +216,9 @@ worker[N-1].fin = total_combinaciones - 1
 4. **Reporte de progreso**: Cada 10,000 intentos
 5. **Hash eficiente**: Operaciones modulares en vez de criptográficas
 
-## Limitaciones Conocidas
+## Limitaciones 
 
-1. **No persistence**: Si se cae el servidor, se pierde todo
+1. **Sin persistencia**: Si se cae el servidor, se pierde todo
 2. **Sin recuperación**: Workers no pueden reconectarse
 3. **Memoria**: Límite de 10 workers simultáneos (configurable)
 4. **Puerto fijo**: 8888 (hardcoded)
@@ -273,4 +254,4 @@ worker[N-1].fin = total_combinaciones - 1
 | 4 chars, 3 ceros, 8 wrk | 1-10 minutos    |
 | 5 chars, 4 ceros, 10wrk | 10+ minutos     |
 
-**Nota**: Tiempos son aproximados y dependen del hardware.
+
