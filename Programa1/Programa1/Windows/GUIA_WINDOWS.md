@@ -17,18 +17,26 @@ gcc --version
 
 ##  Archivos del Proyecto
 
-Programa1/Windows/
+Programa1/Windows/ : 
+
 ├── Archivo.txt           # Texto base (ya existe)
 
 ├── utilidades_hash.h     # Header de funciones
 
 ├── utilidades_hash.c     # Implementación hash
-├── servidor.c            # Servidor Windows
+
+├── servidor.c            # Servidor 
+
 ├── worker.c              # Worker Windows
+
 ├── compilar.ps1          # Script compilación
+
 ├── ejecutar_servidor.ps1 # Script servidor
+
 ├── ejecutar_worker.ps1   # Script worker
+
 ├── limpiar.ps1           # Script limpieza
+
 └── GUIA_WINDOWS.md       # Esta guía
 
 
