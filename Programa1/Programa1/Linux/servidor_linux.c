@@ -29,7 +29,7 @@ char hash_solucion[BUFFER_SIZE];
 uint64_t nonce_solucion = 0;
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 
-// Prototipos
+
 void leer_archivo_texto(char* contenido);
 void configurar_parametros(char* texto_relleno, int* num_ceros, int* num_workers);
 void dividir_trabajo(int longitud_relleno, int num_workers);
@@ -47,7 +47,7 @@ int main() {
     
     printf("=== SIMULADOR DE BLOCKCHAIN - SERVIDOR ===\n\n");
     
-    // Leer archivo de texto
+    // Leer archivo
     leer_archivo_texto(texto_original);
     printf("Texto original del archivo: %s\n\n", texto_original);
     
